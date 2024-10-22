@@ -11,9 +11,9 @@ const PORT = 3000;
 // Configure Multer for image uploads
 const upload = multer({ dest: 'uploads/' });
 
-// const genAI = new GoogleGenerativeAI({
-//     apiKey: 'AIzaSyADjwY4tBVVk4JgzFL80739Q5gUwpABWNU'  // Replace with your actual API key
-// });
+ const genAI = new GoogleGenerativeAI({
+     apiKey: ''  // Replace with your actual API key
+});
 
 app.use(express.json());
 app.use(cors());
