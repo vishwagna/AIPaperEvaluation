@@ -16,7 +16,7 @@ const upload = multer({ dest: 'uploads/' });
 app.use(express.json());
 app.use(bodyParser.json());
 app.use(cors());
-// const API_KEY='AIzaSyADjwY4tBVVk4JgzFL80739Q5gUwpABWNU';
+
 
 
 app.post('/upload', upload.single('file'), async (req, res) => {
